@@ -1,0 +1,84 @@
+.card {
+    width: 230px;
+    height: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: #111;
+    transition: all .25s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 22px rgba(0,0,0,0.5);
+}
+
+.posterDark {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    opacity: 0;
+    transition: .25s ease;
+}
+
+.card:hover .posterDark {
+    opacity: 1;
+}
+
+.favBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(.7);
+    transition: all .25s ease;
+    z-index: 5;
+}
+
+.card:hover .favBtn {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.rating {
+    position: absolute;
+    bottom: 55px;
+    left: 10px;
+    background: rgba(0,0,0,0.75);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.year {
+    position: absolute;
+    bottom: 55px;
+    right: 10px;
+    background: rgba(0,0,0,0.75);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.titleBox {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -40px;
+    padding: 8px;
+    background: rgba(0,0,0,0.75);
+    text-align: center;
+    opacity: 1;
+    transition: all .25s ease;
+}
+
+.card:hover .titleBox {
+    bottom: 0;
+}

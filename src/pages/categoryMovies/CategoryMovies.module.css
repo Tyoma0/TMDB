@@ -1,0 +1,32 @@
+.buttonCategory {
+    padding: 8px 15px;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+    border: 1px gray solid;
+    transition: background 0.3s;
+}
+
+.buttonCategory.active {
+    background-color: #2949c6;
+    color: white;
+}
+.buttonCategory:hover {
+    background-color: rgba(195, 200, 230, 0.25);
+    color: rgba(28, 28, 182, 0.79);
+}
+
+.titleCategory {
+    color: #232222;
+}
+
+
+.divButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
